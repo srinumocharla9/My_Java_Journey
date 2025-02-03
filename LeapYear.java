@@ -16,10 +16,9 @@ public class LeapYear{
         }*/
 
        boolean isLeapYear ;
-       isLeapYear = (year % 4==0);
-       isLeapYear = isLeapYear && (year %100 !=0);
-       isLeapYear = isLeapYear || (year %400 ==0);
+       isLeapYear = ((year % 4==0)&& (year %100 !=0)) ||(year %400 ==0);
+      
 
-       System.out.println(isLeapYear);
+       System.out.println("is " + year + " Leap year ? : " + isLeapYear);
     }
 }
